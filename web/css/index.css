@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 26, 2020, 10:19:48 AM
+    Author     : HOME
+*/
+.inputfile {
+  /* visibility: hidden etc. wont work */
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile:focus + label {
+  /* keyboard navigation */
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile + label * {
+  pointer-events: none;
+}
+
